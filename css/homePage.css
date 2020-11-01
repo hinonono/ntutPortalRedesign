@@ -1,0 +1,138 @@
+.emergency-box {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 42px;
+    background-color: #FF6FA3;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.emergency-box p {
+    color: #ffffff;
+}
+
+.greet-box {
+    display: flex;
+    justify-content: flex-start;
+    /* width: 90%; */
+    height: 140px;
+    padding: 16px 20px;
+    background: linear-gradient(0deg, rgba(110,231,180,1) 0%, rgba(56,207,240,1) 100%);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.greet-box-profile {
+    width: 108px;
+    min-width: 72px;
+    height: 108px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.1);
+}
+
+.greet-box-profile img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+}
+
+.greet-box-profile img:hover {
+    transform: scale(1.1,1.1);
+}
+
+.greet-box-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+    color: #ffffff;
+    padding: 0.2em;
+}
+
+.greet-box-info-content p {
+    line-height: 1.6em;
+}
+
+.system-box {
+    height: 590px;
+    max-height: 590px;
+    background: #ffffff;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 30px;
+    overflow: scroll;
+}
+
+.system-box-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.system-box-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.system-result-wrapper {
+    width: 50%;
+    margin-bottom: 12px;
+}
+
+.system-result {
+    display: flex;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: all 0.2s;
+}
+
+.system-result:hover {
+    background-color: #e8f1ff;
+}
+
+.system-result > p {
+    margin-left: 30px;
+}
+
+/* RWD Design */
+@media (max-width: 768px) {
+    .greet-box {
+        padding: 15px;
+        height: auto;
+        margin-top: 35px;
+    }
+
+    .greet-box-profile {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .greet-box-info {
+        margin-left: 20px;
+    }
+
+    .greet-box-profile {
+        width: 72px;
+        height: 72px;
+    }
+
+    .greet-box-info-content p {
+        font-size: 0.8em;
+        line-height: 1.4em;
+    }
+
+    .system-box {
+        padding: 15px;
+    }
+
+    .system-result-wrapper {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 425px) {
+}
