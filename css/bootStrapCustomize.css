@@ -1,0 +1,44 @@
+.btn {
+    font-weight: 700;
+    border: 0px;
+}
+
+.btn-secondary {
+    background-color: #ffffff;
+    color: #565656;
+}
+
+.btn-secondary:hover {
+    background-color: #e8f1ff;
+    color: #565656;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    color: #565656;
+    background-color: #e8f1ff;
+}
+
+.dropdown-menu {
+    width: 20vw;
+    border: none;
+    box-shadow: 0px 5px 15px 3px rgba(0,0,0,0.2);
+    max-height: 10.5em;
+    overflow: scroll;
+}
+
+.form-control {
+    width: 200px;
+}
+
+@media (max-width: 768px) {
+    .dropdown-menu {
+        width: 80vw;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .form-control {
+        width: 100px;
+    }
+}

@@ -1,14 +1,14 @@
 /*
 
-Ver 1.0
-Lastupdate: 2020-10-31
+Ver 1.1
+Lastupdate: 2020-11-01
 
  */
 * {
     box-sizing: border-box;
 }
 
-a {
+a, a:hover {
     text-decoration: none;
     color: #565656;
 }
@@ -31,6 +31,16 @@ body {
     outline: none;
 }
 
+/* Font Setting */
+.title {
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.red {
+    color: #ff7a7a;
+}
+
 #wrapper {
     min-height: 100%;
     height: auto !important;
@@ -40,11 +50,13 @@ body {
 
 /* header */
 #header {
+    width: 100vw;
     height: 60px;
     background-color: #ffffff;
     box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.1);
     z-index: 2000;
-    position: relative;
+    position: fixed;
+    top: 0;
 }
 
 #header-content {
@@ -52,10 +64,7 @@ body {
     /* height + top/bottom paddding + top/bottom border must add up to footer height */
     padding: 8px;
     display: flex;
-}
-
-.red {
-    color: #ff7a7a;
+    position: relative;
 }
 
 .topnav {
@@ -135,6 +144,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     overflow: scroll;
+    z-index: 9999;
 }
 
 .sidebar span {
@@ -194,10 +204,20 @@ body {
     margin-top: 10px;
 }
 
+
+/* Main */
 #main {
-    margin-left: 260px;
-    max-width: 100%;
-    overflow: hidden;
+    /* margin-left: 260px;
+    padding: 60px 0; */
+    max-height: 100vh;
+    overflow: scroll;
+    padding-left: calc((100vw - 260px - 50vw)/2 + 260px);
+    padding-right: calc((100vw - 260px - 50vw)/2);
+    padding-top: 60px;
+}
+
+.main-wrapper {
+    width: 50vw;
 }
 
 .logo {
@@ -220,13 +240,58 @@ body {
 /* RWD Design */
 @media (max-width: 768px) {
 
+    .title {
+        font-size: 1.5em;
+    }
+
     #main {
         margin-left: 0px;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .main-wrapper {
+        /* padding-left: 5%;
+        padding-right: 5%; */
+        width: 100%;
     }
 
     #hamburger {
         display: block;
     }
+
+    .logo {
+        margin-left: 0px;
+    }
+
+    .topnav {
+        right: 20px;
+    }
+
+    .topnav-box {
+        width: 40vw;
+        top: 60px;
+    }
+
+    .sidebar {
+        width: 40%;
+        position: absolute;
+        /* This should always as same as header's height */
+        top: 60px;
+        bottom: 0px;
+        opacity: 0;
+        transform: translateX(-120%);
+        transition: all 0.5s ease;
+    }
+
+    .sidebar.show-sidebar {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 425px) {
 
     .logo {
         margin-left: 0px;
@@ -253,7 +318,6 @@ body {
     }
 
     .sidebar.show-sidebar {
-        display: block;
         opacity: 1;
         transform: translateX(0);
     }
