@@ -62,6 +62,7 @@
     border-radius: 10px;
     padding: 30px;
     overflow: scroll;
+    overflow-x: hidden;
 }
 
 .system-box-top {
