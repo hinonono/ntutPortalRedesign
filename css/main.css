@@ -296,7 +296,7 @@ body {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 480px) {
 
     .logo {
         margin-left: 0px;

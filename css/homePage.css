@@ -58,7 +58,7 @@
     height: 590px;
     max-height: 590px;
     background: #ffffff;
-    margin-top: 20px;
+    margin: 20px 0;
     border-radius: 10px;
     padding: 30px;
     overflow: scroll;
@@ -135,5 +135,5 @@
 
 }
 
-@media (max-width: 425px) {
+@media (max-width: 480px) {
 }
