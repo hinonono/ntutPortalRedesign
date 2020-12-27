@@ -1,40 +1,44 @@
-.body{
-    background-color: rgb(255, 255, 255);
+h1, h2, h3, p {
+    margin-bottom: 0.5em;
 }
 
-.all{
-    display: flex;
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    max-width: 30vw;
+    margin: 0 auto;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    text-align: center;
+    margin-bottom: 200px;
 }
 
 .error{
-    padding-left: 220px;
-    padding-top: 180px;
-    font-family: sans-serif;
     font-size: 6em;
-    margin: 0;
-    
+    font-weight: bold;
     color: rgb(99, 208, 163);
 }
 
 .found{
-    padding-left: 220px;
-    padding-top: 0px;
-    margin-top: 0px;
-    font-family: sans-serif;
     font-size: 2em;
     color: rgb(99, 208, 163);
-    margin-bottom: 20px;
 }
 .looking{
-    font-family: sans-serif;
     font-size: 1em;
     color: rgb(134, 138, 137);
-    padding-left: 220px;
-    padding-top: 0px;
 }
 
-.planet{
-    margin-top: 20px;
-    margin-left: 120px;
-    width: 520px;
+@media (max-width: 768px) {
+    .container {
+        max-width: 80vw;
+    }
 }
