@@ -1,0 +1,65 @@
+.messagenav-top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+.messagenav-top p{
+    display: flex;
+    justify-content: flex-start;
+    color: #565656;
+    margin-left: 32px;
+    font-size: 2.25em;
+    font-weight: bold;
+}
+.messagenav-bottom{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px 20px;
+    height: 230px;
+    width: 240px;
+    margin-left: 30px;
+    margin-top: 35px;
+    border-radius: 10px;
+}
+.messagenav-img{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -20px;
+    margin-left: -20px;
+    width: 240px;
+    height: 130px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.messagenav-bottom-name{
+    display: flex;
+    justify-content: flex-start;
+    color: #565656;
+    margin-top: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.messagenav-bottom-board{
+    display: flex;
+    justify-content: flex-start;
+    color: #565656;
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+.messagenav-bottom-time{
+    display: flex;
+    justify-content: flex-start;
+    color: #565656;
+    margin-top: 3px;
+    font-size: 0.8em;
+}
+.messagenav-top-search{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 30px;
+}
+.messagenav-bottom:hover{
+    background-color: #e8f1ff;
+}
