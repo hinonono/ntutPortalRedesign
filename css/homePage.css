@@ -55,6 +55,7 @@
 }
 
 .system-box {
+    position: relative;
     height: 590px;
     max-height: 590px;
     background: #ffffff;
