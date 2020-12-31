@@ -2,6 +2,9 @@
 
 https://hinonono.github.io/ntutPortalRedesign/
 
+## 1.7版本
+設定頁面支援RWD
+
 ## 1.6版本
 上方Header 的System Box 加入由右側滑入的動畫
 
