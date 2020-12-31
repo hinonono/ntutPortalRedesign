@@ -1,6 +1,14 @@
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: bold;
+    color: #565656;
+}
 .btn {
     font-weight: 700;
     border: 0px;
+}
+
+.btn-primary {
+    background-color: #4DD9C3;
 }
 
 .btn-secondary {
@@ -27,7 +35,7 @@
 }
 
 .form-control {
-    width: 200px;
+    /* width: 200px; */
 }
 
 @media (max-width: 768px) {
