@@ -2,6 +2,9 @@
 
 https://hinonono.github.io/ntutPortalRedesign/
 
+## 1.8版本
+新增留言板細節頁面、所有頁面支援RWD
+
 ## 1.7版本
 設定頁面支援RWD
 
