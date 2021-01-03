@@ -1,0 +1,124 @@
+.detail-box{
+    height: 1000px;
+    background: #ffffff;
+    margin-top: 6%;
+    border-radius: 10px;
+    padding: 30px;
+}
+.detail-box-name {
+    display: flex;
+    justify-content: flex-start;
+    padding: 21px 55px;
+    margin-top: 10px;
+    color: #565656;
+    font-size: 24px;
+    font-weight: bolder;
+    background-color: #eff1f3;
+    border-radius: 10px;
+    height: 94px;
+}
+.detail-box-word {
+    display: flex;
+    justify-content: flex-start;
+}
+.detail-writer {
+    padding: 0px 55px;
+    margin-top: -35px;
+    color: #565656;
+    font-size: 16px;
+}
+.detail-img {
+    height: 16px;
+    padding: 0px 55px;
+    margin-top: -35px;
+    margin-left: -86px;
+}
+.detail-reply {
+    height: 16px;
+    padding: 0px 55px;
+    margin-top: -35px;
+    margin-left: -105px;
+    color: #565656;
+}
+.detail-time {
+    display: flex;
+    justify-content: flex-end;
+    height: 16px;
+    padding: 0px 55px;
+    margin-top: -55px;
+}
+.detail-box-name-next {
+    display: flex;
+    justify-content: flex-start;
+    padding: 21px 55px;
+    margin-top: 55px;
+    color: #565656;
+    font-size: 24px;
+    font-weight: bolder;
+    background-color: #eff1f3;
+    border-radius: 10px;
+    height: 94px;
+}
+.next-page {
+    display: flex;
+    justify-content: center;
+    padding: 21px 55px;
+    margin-top: 40px;
+}
+.next-page-number {
+    padding: 2.5px;
+}
+.next-page-number:hover {
+    text-decoration:underline;
+}
+.detail-box-name:hover {
+    background-color: #e8f1ff;
+}
+.detail-box-name-next:hover {
+    background-color: #e8f1ff;
+}
+@media (max-width: 768px) {
+    .detail-box{
+        height: auto;
+        width: auto;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .detail-box{
+        height: auto;
+        width: auto;
+    }
+    .detail-box-name{
+        margin: auto;
+        padding: 20px 20px;
+        font-size: 18px;
+        height: 80px;
+    }
+    .detail-box-name-next{
+        margin: auto;
+        margin-top: 5%;
+        padding: 20px 20px;
+        font-size: 18px;
+        height: 80px;
+    }
+    .detail-writer{
+      /*  margin: none;*/
+        padding: 0px 21px;
+        font-size: 14px;
+    }
+    .detail-img{
+        margin-left: 0%;
+        padding: 0%;
+        height: 14px;
+    }
+    .detail-reply{
+        margin-left: 0%;
+        padding: 0px 5px;
+        height: 14px;
+    }
+    .detail-time{
+        display: none;
+    }
+}
