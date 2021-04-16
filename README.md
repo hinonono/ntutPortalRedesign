@@ -3,6 +3,13 @@
 # 🌸 Live Demo網址
 https://hinonono.github.io/ntutPortalRedesign/
 
+
+# 🍀 專案介紹網址
+http://hsiehchengyi.com/work/ntut.html
+
+
+
+
 ## 2.0版本
 新增英文版首頁
 
